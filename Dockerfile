@@ -9,6 +9,7 @@ RUN set -x && \
   wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz && \
   tar xzf hugo_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz && \
   rm -r hugo_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz && \
+  ls -hal && \
   mv hugo_${HUGO_VERSION}_${HUGO_ARCH}/hugo_${HUGO_VERSION}_${HUGO_ARCH} /usr/bin/hugo && \
   rm -r hugo_${HUGO_VERSION}_${HUGO_ARCH} && \
   apk del wget ca-certificates && \
