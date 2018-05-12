@@ -1,4 +1,5 @@
 FROM alpine:3.1
+MAINTAINER suren <zxjlwt@126.com>
 
 ENV HUGO_VERSION 0.40.3
 ENV HUGO_ARCH Linux-64bit
@@ -14,4 +15,4 @@ RUN set -x && \
   apk del wget ca-certificates && \
   rm /var/cache/apk/*
 
-ENTRYPOINT ["/usr/bin/hugo"]
+#ENTRYPOINT ["/usr/bin/hugo"]
