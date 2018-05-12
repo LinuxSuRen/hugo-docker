@@ -10,8 +10,7 @@ RUN set -x && \
   tar xzf hugo_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz && \
   rm -r hugo_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz && \
   ls -hal && \
-  mv hugo_${HUGO_VERSION}_${HUGO_ARCH}/hugo_${HUGO_VERSION}_${HUGO_ARCH} /usr/bin/hugo && \
-  rm -r hugo_${HUGO_VERSION}_${HUGO_ARCH} && \
+  mv hugo /usr/bin/hugo && \
   apk del wget ca-certificates && \
   rm /var/cache/apk/*
 
